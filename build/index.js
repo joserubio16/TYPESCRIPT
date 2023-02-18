@@ -8,7 +8,7 @@ function suma(num1, num2) {
 console.log(suma(1, 3));
 let a = '';
 let booleanos = false;
-let arreglos = ['hola', a, text];
+let arreglos = [' hola', a, text];
 let objetos = { id: 1, nombre: 'Pedro' };
 // null no es lo mismo que void
 let nulos = null;

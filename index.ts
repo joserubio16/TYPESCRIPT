@@ -11,7 +11,7 @@ console.log(suma(1,3))
 let a:string=''
 
 let booleanos: boolean = false
-let arreglos: string[] = ['hola', a, text]
+let arreglos: string[] = [' hola', a, text]
 let objetos: object = {id: 1, nombre: 'Pedro'}
 
 // null no es lo mismo que void
