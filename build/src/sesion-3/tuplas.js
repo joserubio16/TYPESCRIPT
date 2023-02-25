@@ -14,6 +14,11 @@ let complexObj = {
     bStr: 'name',
     cBool: true
 };
+/*
+para desestructurar un objeto es necesario que las
+variables se llaman igual que las propiedades
+no importa el orden
+*/
 let { aNum, bStr, cBool } = complexObj;
 console.log(aNum);
 console.log(bStr);
