@@ -48,3 +48,39 @@ console.log(`myClassMods.id = ${myClassMods.id}`)
 
 //da error ya que name es privado
 //console.log(`myClassMods.id = ${myClassMods.name}`)
+
+//readonly
+class ClassWhitReadOnly {
+   readonly name: string;
+    constructor(name: string) {
+        this.name = name
+        }
+}
+
+let myClassReadonly = new ClassWhitReadOnly('juanb')
+
+//no se puede modificar ni por dentro ni por fuera, solo leer 
+//myClassReadonly.name= 'ivan'
+
+console.log(myClassReadonly.name)
+
+
+//getters Setters
+
+class ClassWithAccesors{
+    private _id: number = 10
+
+     get id() : number {
+        return this._id
+    }
+
+    set id(value :  number) {
+        this._id = value;
+    }
+}
+
+let myClassWithAccesors = new ClassWithAccesors()
+
+console.log(myClassWithAccesors.id)
+myClassWithAccesors.id = 100
+console.log(myClassWithAccesors.id)
