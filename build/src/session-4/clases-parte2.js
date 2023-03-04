@@ -26,3 +26,13 @@ let miClasePrivada = new ClaseConPropiedadPrivada(11);
 // publicos para acceder a ellos
 //miClasePrivada.id = 10
 miClasePrivada.print();
+class ClassMods {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+}
+let myClassMods = new ClassMods(2, 'juan');
+console.log(`myClassMods.id = ${myClassMods.id}`);
+//da error ya que name es privado
+//console.log(`myClassMods.id = ${myClassMods.name}`)
