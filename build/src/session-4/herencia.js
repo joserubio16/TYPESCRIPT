@@ -66,3 +66,5 @@ let myClassD = new DerivadaFormClassWithCtor(1, 'Juan');
 myClassD.print('hola');
 // La implementacion de los getters y seters se hace en la clase
 //donde se definio la propiedad privada
+// RECOMENDACION SIEMPRE DEFINIR LAS VARIABLES CON SUS VALORES
+//DENTRO DEL CONSTRUCTOR

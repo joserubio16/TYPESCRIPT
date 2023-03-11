@@ -114,5 +114,6 @@ myClassD.print('hola')
 //donde se definio la propiedad privada
 
 
-
+// RECOMENDACION SIEMPRE DEFINIR LAS VARIABLES CON SUS VALORES
+//DENTRO DEL CONSTRUCTOR
 
