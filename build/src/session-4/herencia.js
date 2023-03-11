@@ -37,3 +37,32 @@ let myClass = {
     id: 10,
     name: 'juanillo'
 };
+//funcion super
+class BaseClassWithCtor {
+    constructor(id) {
+        this.id = id;
+        this.lastname = 'uribe';
+    }
+    print(text) {
+        console.log(`ClassWithCtor.print() : ${text}`);
+    }
+}
+//Cuando se tiene una clase hija, se debe de poner siempre super
+// Debido al constructor definido en la clase `padre
+class DerivadaFormClassWithCtor extends BaseClassWithCtor {
+    constructor(id, name) {
+        super(id);
+        this.name = name;
+        this.lastname = 'perez';
+    }
+    // --------- Override ----------------
+    //ejecuta el metodo de la clase hija, si la clase hija
+    // no tiene metodo, toma el metodo de la clase padre
+    print(text) {
+        console.log(`DerivadaFormClassWithCtor.print() : ${text}`);
+    }
+}
+let myClassD = new DerivadaFormClassWithCtor(1, 'Juan');
+myClassD.print('hola');
+// La implementacion de los getters y seters se hace en la clase
+//donde se definio la propiedad privada
