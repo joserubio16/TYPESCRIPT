@@ -3,8 +3,15 @@ import { Module1 } from "./src/modules/Module1";
 //de los modulos
 import { Module1 as MyMod1 } from "./src/session-2/Module";
 
+//exportar multiplaces clases
+import { MultipleClass1, MultipleClass2 } from "./src/modules/MultipleExports";
+
 let myModule1 = new Module1()
 myModule1.print()
 
 let myMod1 = new MyMod1()
 myMod1.print()
+
+let myMC1 = new MultipleClass1
+let myMC2 = new MultipleClass2
+
