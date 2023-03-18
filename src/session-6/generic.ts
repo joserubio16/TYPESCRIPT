@@ -76,3 +76,5 @@ function useT<T extends IPrintId | IPrintName>(item: T): void{
   //  item.id
   //  item.id
 }
+
+
